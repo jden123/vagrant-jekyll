@@ -14,7 +14,11 @@ Getting Started
 	config.vm.synced_folder 'D:\Projects\GitHubPages', "/projects"
 	```
 
-2. Use putty or similar to connect to the VM.
+2. Connect to VM 
+	```
+	vagrant ssh
+	```
+	or putty and etc.
 
 3. On VM go to "/projects" folder.
 4. Make new site with:
