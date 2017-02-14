@@ -81,9 +81,20 @@ apt-get -y install build-essential
 apt-get -y install ruby2.3
 apt-get -y install ruby2.3-dev
 
+# it's needed for github-pages 
+apt-get -y install nodejs
+
 sudo gem update --system
 sudo gem install bundler
 sudo gem install github-pages
 
   SHELL
+
+  config.vm.provision "shell", run: "always", inline: <<-SHELL
+
+gem update github-pages
+
+  SHELL
+
+
 end
